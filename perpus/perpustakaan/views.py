@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Halaman Utama Perpustakaan')
+    return render(request, 'base.html')
 
 def buku(request):
     judul = ["Belajar Django", "Belajar Pyton", "Belajar Bootstrap"]
